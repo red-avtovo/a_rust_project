@@ -6,7 +6,7 @@
 	// "dockerFile": ".devcontainer/Dockerfile",
 	"workspaceFolder": "/workspace",
   	"workspaceMount": "source=/data/code/project,target=/workspace,type=bind,consistency=cached",
-	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined", "--net=container:ovpn"],
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
